@@ -23,7 +23,7 @@ chrono = "0.4"
 crossterm = "0.20"
 json = "0.12"
 rand = "0.8"
-rumqttc = "0.7"
+rumqttc = "0.8"
 tui-tree-widget = "0.7"
 
 [dependencies.clap]
