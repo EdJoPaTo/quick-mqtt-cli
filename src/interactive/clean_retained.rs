@@ -19,7 +19,7 @@ pub fn draw_popup(frame: &mut Frame, topic: &str) {
         Line::raw("Confirm with Enter, abort with Esc"),
     ];
     let text = Text::from(text);
-    let area = popup_area(frame.size(), text.width());
+    let area = popup_area(frame.area(), text.width());
     let paragraph = Paragraph::new(text)
         .block(block)
         .alignment(Alignment::Center);

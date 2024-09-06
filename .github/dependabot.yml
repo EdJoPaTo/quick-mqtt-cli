@@ -12,8 +12,6 @@ updates:
     commit-message:
       prefix: "build(cargo):"
     ignore:
-      - dependency-name: crossterm
-        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
       - dependency-name: rustls*
         update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
       - dependency-name: "*"

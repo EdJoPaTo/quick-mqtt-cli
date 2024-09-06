@@ -1,4 +1,4 @@
-use ratatui::layout::Rect;
+use ratatui::layout::{Position, Rect};
 use ratatui::style::{Color, Modifier, Style};
 use ratatui::text::{Line, Span};
 use ratatui::Frame;
@@ -95,7 +95,7 @@ impl Footer {
         #[allow(clippy::cast_possible_truncation)]
         if matches!(app.focus, ElementInFocus::TopicSearch) {
             let x = area.left().saturating_add(keys.width() as u16);
-            frame.set_cursor(x, area.y);
+            frame.set_cursor_position(Position { x, y: area.y });
         }
 
         // Show version / broker when enough space
